@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/NewsBite/static/css/main.2137996c.css",
+    "main.js": "/NewsBite/static/js/main.6e89127b.js",
+    "static/media/spinner.gif": "/NewsBite/static/media/spinner.11d9cde8ebaeadb07ba7.gif",
+    "index.html": "/NewsBite/index.html",
+    "main.2137996c.css.map": "/NewsBite/static/css/main.2137996c.css.map",
+    "main.6e89127b.js.map": "/NewsBite/static/js/main.6e89127b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2137996c.css",
+    "static/js/main.6e89127b.js"
+  ]
+}
