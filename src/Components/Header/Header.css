@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr 2.5rem 5rem;
+    grid-template-rows: 4rem;
+    grid-auto-rows: 4rem;
+    background-color: #303036;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Libre Franklin', sans-serif;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: #48cae4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logoMark {
+    margin-right: 0.3rem;
+    width: 2.9rem;
+    height: 2.9rem;
+}
+
+.logoTitle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    height: 2.9rem;
+}
+
+.logoTitle h1 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.logoTitle h2 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.topics {
+    background-color: #303036;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 38vh;
+    border-radius: 1.5rem 1.5rem 0 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 0.9rem 0.5px rgb(122, 109, 109);
+}
+
+.topic {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+}
+
+.topicIcon {
+    width: 2rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    color: #edf6f9;
+}
+
+.topic:hover {
+    color: #d494ab;
+}
+
+.active {
+    color: #d494ab;
+}
+
+.notActive {
+    color: #48cae4;
+}
+
+.searchBar {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    box-sizing: border-box;
+    height: 45px;
+    width: 250px;
+    border-radius: 2em;
+    padding: 0px;
+}
+
+.input {
+    background-color: #F8F8FA;
+    padding: 1em;
+    width: 80%;
+    height: 100%;
+    border: none;
+    border-radius: 2em 0 0 2em;
+}
+
+.disable {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.menuButton {
+    background-color: transparent;
+    border: none;
+    width: 1.3rem;
+    padding: 0;
+    grid-column: 1/2;
+}
+
+.menuIcon {
+    color: #d494ab;
+    width: 100%;
+    height: 100%;
+}
+
+.Button {
+    background-color: transparent;
+    border: none;
+    width: 1.3rem;
+    padding: 0;
+    grid-column: 3/4;
+}
+
+.searchIcon {
+    color: #48cae4;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    background-color: #d494ab;
+    width: 20%;
+    height: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 0 2em 2em 0;
+    cursor: pointer;
+}
+
+.icon {
+    height: 100%;
+    width: 100%;
+    color: #303036;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.country {
+    width: 70px;
+    height: 30px;
+}
+
+.country:focus {
+    outline: none;
+}
+
+@media (min-width: 700px) {
+
+    .search {
+        display: grid;
+        grid-template-columns: 5rem 1fr 250px 7rem;
+        grid-template-rows: 4rem;
+    }
+
+    .Button {
+        display: none !important;
+    }
+
+    .searchIcon {
+        display: none !important;
+    }
+
+    .country {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+
+    .searchBar {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+
+    .logoTitle h1 {
+        letter-spacing: 0.2rem;
+        font-size: 1.5rem;
+    }
+    
+    .logoTitle h2 {
+        letter-spacing: 0.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .search {
+        display: grid;
+        grid-template-columns: 1fr 250px 10rem;
+        grid-template-rows: 4.5rem;
+        border-bottom: 3px solid #d494ab;
+    }
+
+    .logo {
+        grid-column: 1/2;
+        width: 92%;
+        justify-content: flex-start;
+    }
+
+    .searchBar {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .country {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .topics {
+        position: static;
+        border-radius: 0;
+        width: 100vw;
+        height: 6vh;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        color: #7d7d85;
+        font-size: 1.1rem;
+        font-weight: 500;
+        box-shadow: 0px 0px 0px 0px;
+    }
+
+    .topic {
+        height: 100%;
+        color: #48cae4;
+        padding: 1rem 0.4rem;
+    }
+
+    .active {
+        border-bottom: 4px solid #d494ab;
+        color: #d494ab;
+    }
+
+    .topicIcon {
+        display: none !important;
+    }
+
+    .menuButton {
+        display: none !important;
+    }
+}
